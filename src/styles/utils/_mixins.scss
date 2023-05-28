@@ -1,0 +1,52 @@
+// @mixin typografy($fw, $fs, $lh) {
+//   font-weight: $fw;
+//   font-size: $fs;
+//   line-height: $lh;
+// }
+
+// @mixin background-image($png, $png2x, $webp, $webp2x) {
+//   background-image: url($png);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+
+//   @supports (background-image: url($webp)) {
+//     background-image: url($webp);
+//   }
+
+//   @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//     background-image: url($png2x);
+
+//     @supports (background-image: url($webp2x)) {
+//       background-image: url($webp2x);
+//     }
+//   }
+// }
+
+// @mixin background-image-gradient($gradient, $png, $png2x, $webp, $webp2x) {
+//   background-image: url($png), $gradient;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+
+//   @supports (background-image: url($webp)) {
+//     background-image: url($webp), $gradient;
+//   }
+
+//   @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//     background-image: url($png2x), $gradient;
+
+//     @supports (background-image: url($webp2x)) {
+//       background-image: url($webp2x), $gradient;
+//     }
+//   }
+// }
+
+// @mixin outlined-link($color) {
+//   color: $color;
+//   border-radius: 33px;
+//   overflow: hidden;
+//   border: 1px solid $color;
+// }

@@ -1,0 +1,14 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  color: $primary;
+  background-color: $grayScale-4;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  // background-image: url('../../assets/svg/ellipse.svg');
+  // background-repeat: no-repeat;
+  // background-position: top right;
+  // background-size: cover;
+}
