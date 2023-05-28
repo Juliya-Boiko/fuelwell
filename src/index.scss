@@ -5,6 +5,14 @@
 
 @import './components/buttons/menu/menu-btn';
 @import './components/nav/nav';
+@import './components/curved/curved';
+@import './components/timer/timer';
 
 @import './sections/header/header';
+@import './sections/hero/hero';
 @import './sections/footer/footer';
+
+@font-face {
+  font-family: 'LED';
+  src: url("./assets/fonts/led_counter-7.ttf") format("truetype");
+}

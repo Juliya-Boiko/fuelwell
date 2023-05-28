@@ -1,0 +1,29 @@
+.curved {
+  position: relative;
+  width: 182px;
+  height: 182px;
+  & &__text {
+    -webkit-animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    animation: spin 20s linear infinite;
+  }
+  & &__label {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: $brand;
+    letter-spacing: 0.065em;
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

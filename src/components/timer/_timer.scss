@@ -1,0 +1,10 @@
+.timer {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'LED';
+  font-size: 44px;
+  color: $support-red;
+  background-color: $grayScale-5;
+}
