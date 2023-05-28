@@ -1,0 +1,98 @@
+.footer {
+  padding: 40px 0;
+  background-color: $grayScale-5;
+
+  & &__content {
+    padding: 0 0 34px 0;
+  }
+  & &__info {
+    margin: 0 0 15px 0;
+  }
+  & &__address {
+    margin: 20px 0 0 0;
+    font-style: normal;
+  }
+  & &__emails {
+    margin: 0 0 50px 0;
+  }
+  & &__emails-item {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+    color: $brand;
+    &:not(:last-child) {
+      margin: 0 0 18px 0;
+    }
+  }
+  & &__emails-link {
+    margin: 5px 0 0 0;
+    color: $primary;
+    text-decoration: underline;
+  }
+  & &__socials {
+    display: flex;
+    align-items: center;
+  }
+  & &__socials-item {
+    &:not(:last-child) {
+      margin: 0 15px 0 0;
+    }
+  }
+  & &__socials-link {
+    fill: $primary;
+    transition: $transition;
+    &:hover {
+      fill: $brand;
+    }
+    svg {
+      fill: inherit;
+    }
+  }
+  & &__policy {
+    padding: 16px 0 0 0;
+    text-align: center;
+    font-size: 18px;
+    border-top: 1px solid $grayScale-3;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 40px 0 32px 0;
+    & &__content {
+      display: flex;
+      justify-content: space-between;
+    }
+    & &__info {
+      max-width: 320px;
+      margin: 0;
+    }
+    & &__emails {
+      display: flex;
+      margin: 0 0 40px 0;
+    }
+    & &__emails-item {
+      &:not(:last-child) {
+        margin: 0 15px 0 0;
+      }
+    }
+    & &__policy {
+      padding: 25px 0 0 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 40px 0;
+    & &__emails {
+      flex-direction: column;
+      margin: 0 0 0 480px;
+    }
+    & &__contacts {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    & &__emails-item {
+      &:not(:last-child) {
+        margin: 0 0 15px 0;
+      }
+    }
+  }
+}
