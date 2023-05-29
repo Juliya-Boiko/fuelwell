@@ -1,0 +1,23 @@
+.donut {
+  position: relative;
+  min-width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  overflow: hidden;
+  @extend %flex-center;
+
+  & &__label {
+    position: absolute;
+    z-index: 2;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    @extend %flex-center;
+    flex-direction: column;
+    background-color: $brand;
+  }
+}

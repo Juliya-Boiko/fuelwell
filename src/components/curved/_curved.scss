@@ -1,8 +1,8 @@
 .curved {
   position: absolute;
   right: 20px;
-  bottom: -50%;
-  transform: translateY(-50%);
+  bottom: 0;
+  transform: translateY(50%);
   z-index: 5;
   width: 180px;
   height: 180px;
@@ -27,6 +27,7 @@
   @media screen and (min-width: $tablet) {
     left: 60px;
     top: 50%;
+    transform: translateY(-50%);
   }
   @media screen and (min-width: $desktop) {
     left: 50%;
