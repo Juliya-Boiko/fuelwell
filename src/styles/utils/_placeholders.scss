@@ -12,3 +12,28 @@
  // transition: $transition;
   cursor: pointer;
 }
+
+%action-elem-styles {
+  color: $brand;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $brand;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $brand;
+  }
+}

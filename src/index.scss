@@ -4,12 +4,14 @@
 @import './styles/common/index.scss';
 
 @import './components/buttons/menu/menu-btn';
+@import './components/links/primary/primary-link';
 @import './components/nav/nav';
 @import './components/curved/curved';
 @import './components/timer/timer';
 
 @import './sections/header/header';
 @import './sections/hero/hero';
+@import './sections/about/about';
 @import './sections/footer/footer';
 
 @font-face {
