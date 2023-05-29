@@ -1,21 +1,32 @@
+// BASE STYLES
 @import './styles/utils/index.scss';
 @import './styles/utils/index.scss';
 @import './styles/base/index.scss';
 @import './styles/common/index.scss';
 @import './styles/common/section';
 
+// BUTTONS
 @import './components/buttons/menu/menu-btn';
+
+// LINKS
 @import './components/links/primary/primary-link';
+
+// SELECTS
+@import './components/selects/expenses/expenses-select';
+
+// COMPONENTS
 @import './components/nav/nav';
 @import './components/curved/curved';
 @import './components/timer/timer';
 @import './components/donut/donut';
 
+// SECTIONS
 @import './sections/header/header';
 @import './sections/hero/hero';
 @import './sections/about/about';
 @import './sections/footer/footer';
 @import './sections/efficiency/efficiency';
+@import './sections/expenses/expenses';
 
 @font-face {
   font-family: 'LED';

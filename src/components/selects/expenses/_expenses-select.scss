@@ -1,0 +1,18 @@
+.expenses-select {
+  width: 100%;
+  padding: 14px 15px;
+  font-weight: 700;
+  border: 1px solid $grayScale-1;
+  outline: none;
+  color: $primary;
+  background-color: $grayScale-4;
+
+  &:focus {
+    color: $brand;
+    border-color: $brand;
+
+    & + .expenses__label {
+      color: $brand;
+    }
+  }
+}

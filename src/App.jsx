@@ -3,6 +3,9 @@ import { Footer } from "sections/footer";
 import { Hero } from "sections/hero";
 import { About } from "sections/about";
 import { Efficiency } from "sections/efficiency";
+import { Expenses } from "sections/expenses";
+
+
 
 export const App = () => {
   return (
@@ -12,6 +15,7 @@ export const App = () => {
         <Hero />
         <About />
         <Efficiency />
+        <Expenses />
       </main>
       <Footer />
     </>

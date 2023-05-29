@@ -1,0 +1,62 @@
+.expenses {
+
+  & &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 40px 0;
+    background: rgba(245, 245, 245, 0.04);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  & &__title {
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+
+  & &__form {
+    width: 260px;
+  }
+
+  & &__block {
+    position: relative;
+    padding: 32px 0 0 0;
+    &:not(:last-of-type) {
+      margin: 0 0 15px 0;
+    }
+    &:last-of-type {
+      margin: 0 0 24px 0;
+    }
+  }
+
+  & &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+  }
+
+  & &__input {
+    width: 100%;
+    padding: 14px 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    border: 1px solid $grayScale-1;
+    outline: none;
+    color: $primary;
+    background-color: $grayScale-4;
+    &::placeholder {
+      font-weight: 300;
+      font-size: 14px;
+      color: $grayScale-3;
+    }
+    &:focus {
+      color: $brand;
+      border-color: $brand;
+  
+      &+.expenses__label {
+        color: $brand;
+      }
+    }
+  }
+}
