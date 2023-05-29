@@ -1,37 +1,18 @@
-import { useState } from "react";
+import { useTimer } from 'react-timer-hook';
 
 export const Timer = () => {
-  const [hours, setHours] = useState('01');
-  const [minutes, setMinutes] = useState('00');
-  const [seconds, setSeconds] = useState('00');
+  const time = new Date();
+  const expiryTimestamp = time.setSeconds(time.getSeconds() + 600);
+  const { seconds, minutes, hours } = useTimer({ expiryTimestamp });
 
-  const updateTimer = () => {
-//     var date = new Date();
-//     var h = date.getHours(); // 0 - 23
-//     var m = date.getMinutes(); // 0 - 59
-//     var s = date.getSeconds(); // 0 - 59
-//     var session = "AM";
-    
-//     if(h == 0){
-//         h = 12;
-//     }
-    
-//     if(h > 12){
-//         h = h - 12;
-//         session = "PM";
-//     }
-    
-//     h = (h < 10) ? "0" + h : h;
-//     m = (m < 10) ? "0" + m : m;
-//     s = (s < 10) ? "0" + s : s;
-    
-//     var time = h + ":" + m + ":" + s + " ";
-  };
-  setTimeout(updateTimer, 1000);
-  
+  const formatValue = (value) => {
+    return value <= 9 ? `0${value}` : value;
+  }; 
+
   return (
     <div className="timer">
-      <div>{hours}</div>:<div>{minutes}</div>:<div>{seconds}</div>
+      <span>{formatValue(hours)}</span>:<span>{formatValue(minutes)}</span>:<span>{formatValue(seconds)}</span>
+      <div className='timer__layout'></div>
     </div>
   );
 };

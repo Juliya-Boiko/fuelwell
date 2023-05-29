@@ -1,10 +1,32 @@
 .timer {
+  position: relative;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'LED';
-  font-size: 44px;
+  font-size: 54px;
+  line-height: 1.4;
   color: $support-red;
   background-color: $grayScale-5;
+
+  & &__layout {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+  }
+
+  @media screen and (min-width: $mobile) {
+    font-size: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    height: 340px;
+    font-size: 150px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 690px;
+    font-size: 300px;
+  }
 }

@@ -1,7 +1,11 @@
 .curved {
-  position: relative;
-  width: 182px;
-  height: 182px;
+  position: absolute;
+  right: 0;
+  bottom: -50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 180px;
+  height: 180px;
   & &__text {
     -webkit-animation: spin 20s linear infinite;
     -moz-animation: spin 20s linear infinite;
@@ -18,6 +22,21 @@
     font-size: 30px;
     color: $brand;
     letter-spacing: 0.065em;
+  }
+
+  @media screen and (min-width: $tablet) {
+    left: 60px;
+    top: 50%;
+  }
+  @media screen and (min-width: $desktop) {
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, 0);
+    width: 240px;
+    height: 240px;
+    & &__label {
+      font-size: 43px;
+    }
   }
 }
 
