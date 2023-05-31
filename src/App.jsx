@@ -6,6 +6,7 @@ import { Efficiency } from "sections/efficiency";
 import { Expenses } from "sections/expenses";
 import { Quote } from "sections/quote";
 import { Slider } from "sections/slider";
+import { Benefits } from "sections/benefits";
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
         <Expenses />
         <Quote />
         <Slider />
+        <Benefits />
       </main>
       <Footer />
     </>
