@@ -22,10 +22,10 @@ export const ExpensesResult = ({ values }) => {
           <p>cost spent on fuel {currency}/1year</p>
           <p className="expenses-result__value">{expenseCalc()}</p>
         </div>
-        <di className="expenses-result__block">
+        <div className="expenses-result__block">
           <p>СО2 emmision (kg)</p>
           <p className="expenses-result__value">{emissionCalc()}</p>
-        </di>
+        </div>
       </div>
     </div>
   );

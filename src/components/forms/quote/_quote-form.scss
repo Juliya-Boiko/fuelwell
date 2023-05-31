@@ -1,0 +1,54 @@
+.quote-form {
+  width: 260px;
+  padding: 30px 0 0 0;
+
+  & &__entries {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 20px;
+    margin: 0 0 20px 0;
+  }
+
+  & &__block {
+    position: relative;
+  }
+
+  & &__input {
+    width: 100%;
+    padding: 14px 12px;
+    outline: none;
+    border: 1px solid $brand;
+    background-color: transparent;
+    line-height: 1.4;
+    font-weight: 700;
+    color: inherit;
+    transition: $transition;
+    &::placeholder {
+      color: $grayScale-3;
+    }
+  }
+
+  & &__input--error {
+    border-color: $support-red;
+  }
+
+  & &__error {
+    position: absolute;
+    left: 12px;
+    bottom: -15px;
+    font-size: 10px;
+    color: $support-red;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 535px;
+    padding: 40px 0 0 0;
+    & &__entries {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+  }
+}

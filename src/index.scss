@@ -6,6 +6,7 @@
 // BUTTONS
 @import './components/buttons/menu/menu-btn';
 @import './components/buttons/bordered/bordered-btn';
+@import './components/buttons/brand/brand-btn';
 
 // LINKS
 @import './components/links/primary/primary-link';
@@ -13,6 +14,7 @@
 // FORMS 
 @import './components/forms/expenses/expenses-form';
 @import './components/forms/expenses/components/selects/expenses-select';
+@import './components/forms/quote/quote-form';
 
 // TABLES
 @import './components/tables/expenses-result/expenses-result';
@@ -31,6 +33,10 @@
 @import './sections/footer/footer';
 @import './sections/efficiency/efficiency';
 @import './sections/expenses/expenses';
+@import './sections/quote/quote';
+@import './sections/slider/slider';
+
+
 
 @font-face {
   font-family: 'LED';

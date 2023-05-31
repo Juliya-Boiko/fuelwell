@@ -1,0 +1,17 @@
+.brand-btn {
+  @extend %reset-btn-styles;
+  @extend %flex-center;
+  width: 100%;
+  height: 50px;
+  background-color: $brand;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.4;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.04);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}

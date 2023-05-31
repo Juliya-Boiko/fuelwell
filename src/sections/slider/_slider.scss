@@ -1,0 +1,35 @@
+@keyframes scroll-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  font-size: 100px;
+  line-height: 1.4;
+  text-shadow: -1px 1px 0 $brand, 1px 1px 0 $brand, 1px -1px 0 $brand, -1px -1px 0 $brand;
+  color: $grayScale-4;
+  & &__group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    min-width: 100%;
+    animation: scroll-x 30s linear infinite;
+  }
+  & &__item {
+    margin: 0 10px;
+    min-width: fit-content;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 200px;
+  }
+}
