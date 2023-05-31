@@ -1,0 +1,6 @@
+.faq {
+  background-color: $grayScale-5;
+  & &__title {
+    margin: 0 0 30px 0;
+  }
+}

@@ -10,6 +10,7 @@ import { Benefits } from "sections/benefits";
 import { Device } from "sections/device";
 import { Gallery } from "sections/gallery";
 import { Proves } from "sections/proves";
+import { Faq } from "sections/faq";
 
 export const App = () => {
   return (
@@ -27,6 +28,7 @@ export const App = () => {
         <Gallery />
         <Slider />
         <Proves />
+        <Faq />
       </main>
       <Footer />
     </>

@@ -1,0 +1,33 @@
+.accord {
+  padding: 30px 0;
+  border-bottom: 1px solid $primary;
+  cursor: pointer;
+  & &__quest {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  & &__answer {
+    margin: 15px 0 0 0;
+    font-size: 12px;
+  }
+  & &__icon {
+    min-width: 30px;
+    min-height: 30px;
+    margin: 0 0 0 5px;
+    transition: $transition;
+  }
+  & &__icon--reversed {
+    transform: rotate(180deg);
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 40px 0;
+    & &__quest {
+      font-size: 24px;
+    }
+    & &__answer {
+      font-size: 14px;
+    }
+  }
+}
