@@ -1,0 +1,57 @@
+.device {
+  background-color: $grayScale-5;
+
+  & &__title {
+    margin: 0 0 30px 0;
+  }
+
+  & &__descr {
+    margin: 0 0 15px 0;
+  }
+
+  & &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  & &__item {
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 1.4;
+    border-bottom: 1px solid $grayScale-3;
+  }
+
+  & &__index {
+    margin: 0 0 15px 0;
+    font-weight: 900;
+    font-size: 36px;
+    color: $brand;
+  }
+
+  @media screen and (min-width: $tablet) {
+    & &__list {
+      max-width: 570px;
+      margin: 0 auto;
+    }
+    & &__item {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+    }
+    & &__index {
+      margin: 0 30px 0 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    & &__img {
+      width: 620px;
+      height: 615px;
+    }
+  }
+}
