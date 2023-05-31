@@ -14,49 +14,50 @@
     text-align: center;
   }
 
-  & &__form {
+  & &__summary {
     width: 260px;
+    padding: 40px 0 0 0;
   }
 
-  & &__block {
-    position: relative;
-    padding: 32px 0 0 0;
-    &:not(:last-of-type) {
-      margin: 0 0 15px 0;
-    }
-    &:last-of-type {
-      margin: 0 0 24px 0;
-    }
-  }
-
-  & &__label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: 500;
-  }
-
-  & &__input {
+  & &__wrapper {
     width: 100%;
-    padding: 14px 15px;
-    font-weight: 700;
-    line-height: 1.4;
-    border: 1px solid $grayScale-1;
-    outline: none;
-    color: $primary;
-    background-color: $grayScale-4;
-    &::placeholder {
-      font-weight: 300;
-      font-size: 14px;
-      color: $grayScale-3;
+    margin: 0 0 40px 0;
+  }
+
+  & &__info {
+    text-align: center;
+    font-size: 10px;
+    line-height: 2;
+  }
+
+  @media screen and (min-width: $tablet) {
+    & &__container {
+      padding: 40px;
     }
-    &:focus {
-      color: $brand;
-      border-color: $brand;
-  
-      &+.expenses__label {
-        color: $brand;
-      }
+    & &__summary {
+      width: 535px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & &__container {
+      padding: 50px 80px;
+    }
+
+    & &__title {
+      margin: 0 0 30px 0;
+    }
+
+    & &__summary {
+      width: 100%;
+    }
+
+    & &__wrapper {
+      display: flex;
+    }
+
+    & &__info {
+      font-size: 18px;
     }
   }
 }

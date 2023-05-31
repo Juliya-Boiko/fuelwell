@@ -1,0 +1,78 @@
+.expenses-form {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & &__entries {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 30px;
+    margin: 0 0 40px 0;
+  }
+  & &__block {
+    position: relative;
+    width: 100%;
+    padding: 32px 0 0 0;
+  }
+  & &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+  }
+  & &__error {
+    position: absolute;
+    bottom: -20px;
+    left: 14px;
+    color: $support-red;
+  }
+  & &__input {
+    width: 100%;
+    padding: 14px 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    border: 1px solid $grayScale-1;
+    outline: none;
+    color: $primary;
+    background-color: $grayScale-4;
+    transition: $transition;
+    &::placeholder {
+      font-weight: 300;
+      font-size: 14px;
+      color: $grayScale-3;
+    }
+    &:focus {
+      color: $brand;
+      border-color: $brand;
+      &+.expenses-form__label {
+        color: $brand;
+      }
+    }
+  }
+  & &__input--error {
+    border-color: $support-red;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 535px;
+    & &__entries {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 30px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+    & &__entries {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 0px;
+      margin: 0 0 50px 0;
+    }
+  }
+}

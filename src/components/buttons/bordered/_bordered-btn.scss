@@ -1,0 +1,27 @@
+.bordered-btn {
+  position: relative;
+  height: 43px;
+  padding: 0 0 0 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  transition: $transition;
+  @extend %reset-btn-styles;
+  @extend %flex-center;
+  @extend %action-elem-styles;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  & &__icon {
+    width: 29px;
+    height: auto;
+    margin: 0 0 0 20px;
+    fill: $brand;
+  }
+}

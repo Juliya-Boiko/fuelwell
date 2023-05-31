@@ -1,18 +1,22 @@
 // BASE STYLES
 @import './styles/utils/index.scss';
-@import './styles/utils/index.scss';
 @import './styles/base/index.scss';
 @import './styles/common/index.scss';
-@import './styles/common/section';
 
 // BUTTONS
 @import './components/buttons/menu/menu-btn';
+@import './components/buttons/bordered/bordered-btn';
 
 // LINKS
 @import './components/links/primary/primary-link';
 
-// SELECTS
-@import './components/selects/expenses/expenses-select';
+// FORMS 
+@import './components/forms/expenses/expenses-form';
+@import './components/forms/expenses/components/selects/expenses-select';
+
+// TABLES
+@import './components/tables/expenses-result/expenses-result';
+@import './components/tables/expenses-potential/expenses-potential';
 
 // COMPONENTS
 @import './components/nav/nav';

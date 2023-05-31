@@ -11,7 +11,7 @@
     color: $brand;
     border-color: $brand;
 
-    & + .expenses__label {
+    & + .expenses-form__label {
       color: $brand;
     }
   }
