@@ -13,7 +13,7 @@ export const Benefits = () => {
       <div className="container">
         <ul className='benefits__list'>
           <li className='benefits__item'>
-            <h2><h2 className="section__title">ADDITIONAL <span className="section__title--accent">BENEFITS</span></h2></h2>
+            <h2 className="section__title">ADDITIONAL <span className="section__title--accent">BENEFITS</span></h2>
           </li>
           <li className='benefits__item'>
             <Engine className='benefits__icon'/>

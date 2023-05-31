@@ -8,7 +8,7 @@ import { Quote } from "sections/quote";
 import { Slider } from "sections/slider";
 import { Benefits } from "sections/benefits";
 import { Device } from "sections/device";
-
+import { Gallery } from "sections/gallery";
 
 export const App = () => {
   return (
@@ -23,7 +23,7 @@ export const App = () => {
         <Slider />
         <Benefits />
         <Device />
-        <div>div</div>
+        <Gallery />
       </main>
       <Footer />
     </>

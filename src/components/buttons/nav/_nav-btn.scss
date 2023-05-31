@@ -1,0 +1,25 @@
+.nav-btn {
+  @extend %flex-center;
+  @extend %reset-btn-styles;
+  width: 40px;
+  height: 16px;
+  padding: 5px 0;
+  fill: $primary;
+  &:not(:last-child) {
+    margin: 0 20px 0 0;
+  }
+
+  &:hover, &:active {
+    fill: $brand;
+  }
+  
+  & &__icon {
+    width: 100%;
+    height: auto;
+    fill: inherit;
+  }
+}
+
+.nav-btn--reversed {
+  transform: rotate(180deg);
+}

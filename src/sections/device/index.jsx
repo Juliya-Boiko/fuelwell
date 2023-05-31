@@ -1,6 +1,3 @@
-
-
-
 export const Device = () => {
   return (
     <section className="section device">
