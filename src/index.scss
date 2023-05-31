@@ -15,7 +15,7 @@
 // FORMS 
 @import './components/forms/expenses/expenses-form';
 @import './components/forms/expenses/components/selects/expenses-select';
-@import './components/forms/quote/quote-form';
+@import './components/forms/contact/contact-form';
 
 // TABLES
 @import './components/tables/expenses-result/expenses-result';
@@ -42,6 +42,7 @@
 @import './sections/gallery/gallery';
 @import './sections/proves/proves';
 @import './sections/faq/faq';
+@import './sections/contact/contact';
 
 @font-face {
   font-family: 'LED';
