@@ -9,6 +9,7 @@ import { Slider } from "sections/slider";
 import { Benefits } from "sections/benefits";
 import { Device } from "sections/device";
 import { Gallery } from "sections/gallery";
+import { Proves } from "sections/proves";
 
 export const App = () => {
   return (
@@ -24,6 +25,8 @@ export const App = () => {
         <Benefits />
         <Device />
         <Gallery />
+        <Slider />
+        <Proves />
       </main>
       <Footer />
     </>
