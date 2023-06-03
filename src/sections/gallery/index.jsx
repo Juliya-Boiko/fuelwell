@@ -42,7 +42,7 @@ export const Gallery = () => {
   const swiperRef = useRef();
 
   return (
-    <section className="section gallery">
+    <section id='offers' className="section gallery">
       <div className='container'>
         <h2 className="section__title gallery__title"><span className="section__title--accent">FUEL</span> CONSUMPTION <span className="section__title--accent">EFFICIENCY</span> </h2>
         <div className='gallery__nav'>

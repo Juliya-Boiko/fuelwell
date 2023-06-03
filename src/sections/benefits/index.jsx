@@ -9,7 +9,7 @@ import { ReactComponent as Co } from '../../assets/svg/co.svg';
 
 export const Benefits = () => {
   return (
-    <section className="section benefits">
+    <section id='benefits' className="section benefits">
       <div className="container">
         <ul className='benefits__list'>
           <li className='benefits__item'>

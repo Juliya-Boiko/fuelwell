@@ -1,0 +1,38 @@
+.menu {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 99;
+  @extend %flex-center;
+  flex-direction: column;
+  background-color: $grayScale-4;
+
+  & &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & &__link {
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.4;
+    transition: $transition;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin: 0 0 36px 0;
+    }
+    &:hover {
+      @extend %action-elem-styles;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

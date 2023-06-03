@@ -13,7 +13,7 @@ export const Expenses = () => {
   };
 
   return (
-    <section className="section expenses">
+    <section id='calculate' className="section expenses">
       <div className="container">
         <div className="expenses__container">
           <h2 className="section__title expenses__title">Find out your current annual expenses</h2>

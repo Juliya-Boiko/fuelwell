@@ -30,12 +30,6 @@ export const Steps = () => {
             </li>
           })}
         </ul>
-        {/* <div className="wrapper">
-          <div className="items"></div>
-          <div className="items"></div>
-          <div className="items"></div>
-          <div className="items"></div>
-        </div> */}
       </div>
     </section>
   );
