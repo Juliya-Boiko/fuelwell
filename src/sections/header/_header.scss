@@ -1,6 +1,7 @@
 .header {
   padding: 8px 0 16px 0;
   border-bottom: 1px solid $grayScale-3;
+  background-color: $grayScale-4;
 
   & &__container {
     display: flex;
@@ -14,5 +15,25 @@
 
   @media screen and (min-width: $desktop) {
     padding: 24px 0 22px 0;
+  }
+}
+
+.header--sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: $transition;
+  animation: stickyScroll 0.5s forwards;
+}
+
+@keyframes stickyScroll {
+  0% {
+    transform: translateY(-80px);
+  }
+
+  100% {
+    transform: translateY(0px);
   }
 }

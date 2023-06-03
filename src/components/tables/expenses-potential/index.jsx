@@ -24,10 +24,10 @@ export const ExpensesPotential = ({ values }) => {
           <p>Fuel cost {currency}</p>
           <p className="expenses-potential__value">{expenseCalc()}</p>
         </div>
-        <di className="expenses-potential__block">
+        <div className="expenses-potential__block">
           <p>СО2 emmision (kg)</p>
           <p className="expenses-potential__value">{emissionCalc()}</p>
-        </di>
+        </div>
       </div>
     </div>
   );

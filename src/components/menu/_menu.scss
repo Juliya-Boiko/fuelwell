@@ -21,12 +21,15 @@
     line-height: 1.4;
     transition: $transition;
     cursor: pointer;
+
     &:not(:last-child) {
       margin: 0 0 36px 0;
     }
+
     &:hover {
       @extend %action-elem-styles;
     }
+    
     &:active {
       transform: scale(0.9);
     }

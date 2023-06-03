@@ -17,6 +17,7 @@
   line-height: 1.4;
   text-shadow: -1px 1px 0 $brand, 1px 1px 0 $brand, 1px -1px 0 $brand, -1px -1px 0 $brand;
   color: $grayScale-4;
+  
   & &__group {
     display: flex;
     flex-shrink: 0;
@@ -24,6 +25,7 @@
     min-width: 100%;
     animation: scroll-x 30s linear infinite;
   }
+  
   & &__item {
     margin: 0 10px;
     min-width: fit-content;

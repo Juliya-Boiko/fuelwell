@@ -1,0 +1,6 @@
+.prevent-scroll {
+  @media screen and (max-width: 767px) {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+}

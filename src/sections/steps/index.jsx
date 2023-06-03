@@ -16,7 +16,6 @@ const steps = [
 ];
 
 export const Steps = () => {
-
   return (
     <section className="section steps">
       <div className="container steps__container">

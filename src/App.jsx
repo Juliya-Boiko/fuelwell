@@ -13,6 +13,7 @@ import { Proves } from "sections/proves";
 import { Faq } from "sections/faq";
 import { Contact } from "sections/contact";
 import { Steps } from "sections/steps";
+import {NotificationContainer} from 'react-notifications';
 
 export const App = () => {
   return (
@@ -35,6 +36,7 @@ export const App = () => {
         <Steps />
       </main>
       <Footer />
+      <NotificationContainer/>
     </>
   );
 };

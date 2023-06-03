@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   & &__entries {
     width: 100%;
     display: grid;
@@ -11,23 +12,27 @@
     grid-row-gap: 30px;
     margin: 0 0 40px 0;
   }
+
   & &__block {
     position: relative;
     width: 100%;
     padding: 32px 0 0 0;
   }
+
   & &__label {
     position: absolute;
     top: 0;
     left: 0;
     font-weight: 500;
   }
+
   & &__error {
     position: absolute;
     bottom: -20px;
     left: 14px;
     color: $support-red;
   }
+
   & &__input {
     width: 100%;
     padding: 14px 15px;
@@ -38,11 +43,13 @@
     color: $primary;
     background-color: $grayScale-4;
     transition: $transition;
+
     &::placeholder {
       font-weight: 300;
       font-size: 14px;
       color: $grayScale-3;
     }
+
     &:focus {
       color: $brand;
       border-color: $brand;
@@ -51,12 +58,14 @@
       }
     }
   }
+
   & &__input--error {
     border-color: $support-red;
   }
 
   @media screen and (min-width: $tablet) {
     width: 535px;
+
     & &__entries {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
@@ -67,6 +76,7 @@
 
   @media screen and (min-width: $desktop) {
     width: 100%;
+    
     & &__entries {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 1fr;

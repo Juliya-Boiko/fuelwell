@@ -52,6 +52,7 @@ export const Gallery = () => {
       </div>
       <Swiper
         spaceBetween={15}
+        loop={true}
         slidesPerView={"auto"}
         modules={[Navigation]}
         onBeforeInit={(swiper) => { swiperRef.current = swiper; }}

@@ -5,6 +5,8 @@
   height: 16px;
   padding: 5px 0;
   fill: $primary;
+  transition: $transition;
+
   &:not(:last-child) {
     margin: 0 20px 0 0;
   }

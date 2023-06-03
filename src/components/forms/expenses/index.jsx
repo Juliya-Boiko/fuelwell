@@ -27,22 +27,39 @@ export const ExpensesForm = ({ submitHandler }) => {
             </div>
             
             <div className='expenses-form__block'>
-              <InputNumeric value={values.mileage} name="mileage" className={`expenses-form__input ${errors.mileage && touched.mileage ? 'expenses__input--error' : ''}`}
-                onChange={handleChange} maxValue={1000000} thousandSeparator=" " decimalScale={0} />
+              <InputNumeric
+                name="mileage"
+                value={values.mileage}
+                onChange={handleChange}
+                maxValue={1000000}
+                thousandSeparator=" "
+                decimalScale={0}
+                className={`expenses-form__input ${errors.mileage && touched.mileage ? 'expenses-form__input--error' : ''}`}  />
               <p className='expenses-form__label'>Vehicle mileage (km)</p>
               {errors.mileage && touched.mileage ? <p className='expenses-form__error'>{errors.mileage}</p> : null}
             </div>
 
             <div className='expenses-form__block'>
-              <InputNumeric value={values.fuelConsumption} name="fuelConsumption"  className={`expenses-form__input ${errors.fuelConsumption && touched.fuelConsumption ? 'expenses-form__input--error' : ''}`}
-                onChange={handleChange} maxValue={100} allowedDecimalSeparators={['%', ',', '/']} decimalScale={1} />
+              <InputNumeric
+                name="fuelConsumption"
+                value={values.fuelConsumption}
+                onChange={handleChange}
+                maxValue={100}
+                allowedDecimalSeparators={['%', ',', '/']} decimalScale={1}
+               className={`expenses-form__input ${errors.fuelConsumption && touched.fuelConsumption ? 'expenses-form__input--error' : ''}`} />
               <p className='expenses-form__label'>Fuel consumption</p>
               {errors.fuelConsumption && touched.fuelConsumption ? <p className='expenses-form__error'>{errors.fuelConsumption}</p> : null}
             </div>
 
             <div className='expenses-form__block'>
-              <InputNumeric value={values.fuelCost} name="fuelCost"  className={`expenses-form__input ${errors.fuelCost && touched.fuelCost ? 'expenses-form__input--error' : ''}`}
-                onChange={handleChange} maxValue={1000} allowedDecimalSeparators={['%', ',', '/']} decimalScale={2} />
+              <InputNumeric
+                name="fuelCost"
+                value={values.fuelCost}  
+                onChange={handleChange}
+                maxValue={1000}
+                allowedDecimalSeparators={['%', ',', '/']}
+                decimalScale={2}
+                className={`expenses-form__input ${errors.fuelCost && touched.fuelCost ? 'expenses-form__input--error' : ''}`} />
               <p className='expenses-form__label'>Fuel cost {values.currency}</p>
               {errors.fuelCost && touched.fuelCost ? <p className='expenses-form__error'>{errors.fuelCost}</p> : null}
             </div>  

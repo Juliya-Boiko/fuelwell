@@ -21,10 +21,12 @@
   @media screen and (min-width: $mobile) {
     font-size: 60px;
   }
+
   @media screen and (min-width: $tablet) {
     height: 340px;
     font-size: 150px;
   }
+  
   @media screen and (min-width: $desktop) {
     height: 690px;
     font-size: 300px;

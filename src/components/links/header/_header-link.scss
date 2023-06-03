@@ -1,0 +1,20 @@
+.header-link {
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: $transition;
+
+  &:not(:last-child) {
+    margin: 0 36px 0 0;
+  }
+
+  &:hover {
+    @extend %action-elem-styles;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

@@ -1,5 +1,4 @@
 .benefits {
-
   & &__title {
     margin: 0 0 30px 0;
   }
@@ -15,7 +14,11 @@
     &:not(:first-child) {
       height: 225px;
       padding: 30px;
+      transition: $transition;
       @extend %bg-box-shadow;
+      &:hover {
+        transform: scale(1.04);
+      }
     }
   }
 
@@ -37,6 +40,7 @@
       grid-template-rows: repeat(3, 1fr);
       gap: 30px;
     }
+    
     & &__item {
       &:not(:first-child) {
         height: 260px;

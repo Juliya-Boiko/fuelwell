@@ -7,12 +7,15 @@
     line-height: 1.4;
     cursor: pointer;
     transition: $transition;
+
     &:not(:last-child) {
       margin: 0 36px 0 0;
     }
+
     &:hover {
       @extend %action-elem-styles;
     }
+    
     &:active {
       transform: scale(0.9);
     }
