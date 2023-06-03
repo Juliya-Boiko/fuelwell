@@ -8,6 +8,26 @@
     @extend %bg-box-shadow;
   }
   & &__title {
+    margin: 0 0 20px 0;
     text-align: center;
+  }
+  & &__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  @media screen and (min-width: $tablet) {
+    & &__container {
+      padding: 60px 0;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    & &__title {
+      margin: 0 0 40px 0;
+    }
+    & &__subtitle {
+      margin: 0 0 40px 0;
+    }
   }
 }

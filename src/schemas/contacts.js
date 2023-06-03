@@ -14,7 +14,7 @@ const validationSchema = Yup.object().shape({
   company: Yup.string().trim().min(3).required("Required field"),
 });
 
-export const quoteShema = {
+export const contactsSchema = {
   initialValues,
   validationSchema
 };

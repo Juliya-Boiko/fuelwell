@@ -12,6 +12,7 @@ import { Gallery } from "sections/gallery";
 import { Proves } from "sections/proves";
 import { Faq } from "sections/faq";
 import { Contact } from "sections/contact";
+import { Steps } from "sections/steps";
 
 export const App = () => {
   return (
@@ -31,6 +32,7 @@ export const App = () => {
         <Proves />
         <Faq />
         <Contact />
+        <Steps />
       </main>
       <Footer />
     </>

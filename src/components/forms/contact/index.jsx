@@ -1,4 +1,4 @@
-import { quoteShema } from "schemas/quote";
+import { contactsSchema } from "schemas/contacts";
 import { Formik, Form } from 'formik';
 import { PatternFormat } from 'react-number-format';
 import { BrandBtn } from "components/buttons/brand/BrandBtn";
@@ -6,8 +6,8 @@ import { BrandBtn } from "components/buttons/brand/BrandBtn";
 export const ContactForm = () => {
   return (
     <Formik
-      initialValues={quoteShema.initialValues}
-      validationSchema={quoteShema.validationSchema}
+      initialValues={contactsSchema.initialValues}
+      validationSchema={contactsSchema.validationSchema}
       onSubmit={(values) => console.log(values)}
     >
       {({ values, handleChange, errors, touched }) => (

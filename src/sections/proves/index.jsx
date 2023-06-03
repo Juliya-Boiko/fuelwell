@@ -4,7 +4,7 @@ export const Proves = () => {
   return (
     <section className="section proves">
       <div className="container">
-        <h2 className="section__title proves__title"><span className="section__title--accent">aDDITIONAL</span>PROVES</h2>
+        <h2 className="section__title proves__title"><span className="section__title--accent">aDDITIONAL </span>PROVES</h2>
         <ul className="proves__list">
           <li className="proves__item">
             <p className="proves__index">01</p>
