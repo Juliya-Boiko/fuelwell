@@ -1,12 +1,2 @@
-<svg width="360" height="575" viewBox="0 0 360 575" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_401_723)">
-<circle cx="298" cy="206" r="169" fill="#00D5E4" fill-opacity="0.46"/>
-</g>
-<defs>
-<filter id="filter0_f_401_723" x="-71" y="-163" width="738" height="738" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_401_723"/>
-</filter>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="0.39"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feGaussianBlur stdDeviation="64" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="265" ry="268" cx="404.27433625066476" cy="413.66726460881273" fill="hsl(184, 100%, 45%)"></ellipse></g></svg>

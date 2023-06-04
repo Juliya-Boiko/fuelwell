@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Fade } from "react-awesome-reveal";
 import ReactCurvedText from 'react-curved-text';
 
 export const Curved = () => {
@@ -40,7 +41,7 @@ export const Curved = () => {
   };
 
   return (
-    <div className='curved'>
+    <Fade delay={800} className='curved'>
       <ReactCurvedText width={getCurvedSize().width}
         height={getCurvedSize().height}
         cx={getCurvedSize().cx}
@@ -57,6 +58,6 @@ export const Curved = () => {
         svgProps={{ className: "curved__text" }}
       />
       <p className='curved__label'>SAVE $5000</p>
-    </div>
+    </Fade>
   );
 };

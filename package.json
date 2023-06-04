@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://goitacademy.github.io/react-homework-template/",
   "dependencies": {
+    "@emotion/react": "^11.11.0",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -11,6 +12,7 @@
     "modern-normalize": "^2.0.0",
     "node-sass": "^7.0.3",
     "react": "^18.1.0",
+    "react-awesome-reveal": "^4.2.3",
     "react-curved-text": "^2.0.2",
     "react-dom": "^18.1.0",
     "react-minimal-pie-chart": "^8.4.0",

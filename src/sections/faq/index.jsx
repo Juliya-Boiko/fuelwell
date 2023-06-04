@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import { Accord } from "components/accord";
 
 const faqs = [
@@ -37,12 +38,16 @@ export const Faq = () => {
   return (
     <section className="section faq">
       <div className="container">
-        <h2 className="section__title faq__title">Frequently asked <span className="section__title--accent">questions</span></h2>
-        <ul>
-          {faqs.map((item) => {
-            return <Accord key={item.id} item={item} />
-          })}
-        </ul>
+        <Fade>
+          <h2 className="section__title faq__title">Frequently asked <span className="section__title--accent">questions</span></h2>
+        </Fade>
+        <Fade delay={200}>
+          <ul>
+            {faqs.map((item) => {
+              return <Accord key={item.id} item={item} />
+            })}
+          </ul>
+        </Fade>
       </div>
     </section>
   );

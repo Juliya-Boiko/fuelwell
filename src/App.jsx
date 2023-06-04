@@ -24,10 +24,10 @@ export const App = () => {
         <About />
         <Efficiency />
         <Expenses />
-        <Quote />
         <Slider />
         <Benefits />
         <Device />
+        <Quote />
         <Gallery />
         <Slider />
         <Proves />

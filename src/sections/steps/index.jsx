@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import { BorderedBtn } from "components/buttons/bordered/BorderedBtn";
 
 const steps = [
@@ -19,16 +20,20 @@ export const Steps = () => {
   return (
     <section className="section steps">
       <div className="container steps__container">
-        <h2 className="section__title steps__title">3 steps of <span className="section__title--accent">cooperation</span> </h2>
-        <ul className="steps__list">
-          {steps.map(({ id, value }) => {
-            return <li key={id} className="steps__item">
-              <p className="steps__index">step {id}</p>
-              <p className="steps__value">{value}</p>
-              <BorderedBtn title="fill online form" />
+        <Fade>
+          <h2 className="section__title steps__title">3 steps of <span className="section__title--accent">cooperation</span> </h2>
+        </Fade>
+        <Fade delay={200}>
+          <ul className="steps__list">
+            {steps.map(({ id, value }) => {
+              return <li key={id} className="steps__item">
+                <p className="steps__index">step {id}</p>
+                <p className="steps__value">{value}</p>
+                <BorderedBtn title="fill online form" />
             </li>
           })}
         </ul>
+        </Fade>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { Donut } from 'components/donut';
+import { Fade } from "react-awesome-reveal";
 
 const data = [
   {
@@ -31,9 +32,14 @@ export const Efficiency = () => {
   return (
     <section className="section efficiency">
       <div className="container efficiency__container">
-        <h2 className="section__title efficiency__title">BRING YOUR CORPORATE FLEET TO THE NEXT LEVEL OF EFFICIENCY</h2>
-        <p className='efficiency__text'>At least <span className="efficiency__text--accent">10% less</span> fuel consumption. Harmful emissions reduce as following</p>
-        <picture>
+        <Fade>
+          <h2 className="section__title efficiency__title">BRING YOUR CORPORATE FLEET TO THE NEXT LEVEL OF EFFICIENCY</h2>
+        </Fade>
+        <Fade delay={200}>
+          <p className='efficiency__text'>At least <span className="efficiency__text--accent">10% less</span> fuel consumption. Harmful emissions reduce as following</p>
+        </Fade>
+        <Fade delay={400}>
+          <picture>
           <source media="(min-width: 1920px)" srcSet={`${require('../../assets/images/efficiency/desktop/efficiency.webp')} 1x, ${require('../../assets/images/efficiency/desktop/efficiency@2x.webp')} 2x,`} type="image/webp" ></source>
           <source media="(min-width: 1920px)" srcSet={`${require('../../assets/images/efficiency/desktop/efficiency.png')} 1x, ${require('../../assets/images/efficiency/desktop/efficiency@2x.png')} 2x,`}></source>
           
@@ -44,7 +50,8 @@ export const Efficiency = () => {
           <img src={require('../../assets/images/efficiency/mobile/efficiency.png')} srcSet={`${require('../../assets/images/efficiency/mobile/efficiency@2x.png')} 2x`}
             alt="FuelWell" loading='lazy' className='efficiency__img'
           />
-        </picture>
+          </picture>
+        </Fade>
         
         <ul className='efficiency__list'>
           {data.map(({ id, value, label, descr }) => {

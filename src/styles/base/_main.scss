@@ -8,8 +8,17 @@ body {
   width: 100%;
   min-height: 100vh;
   font-size: 16px;
-  // background-image: url('../../assets/svg/ellipse.svg');
-  // background-repeat: no-repeat;
-  // background-position: top right;
-  // background-size: cover;
+  background-image: url('../../assets/svg/ellipse.svg'), url('../../assets/svg/ellipse.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 338px, 330px;
+  background-position: top -30px right -127px, top 725px left -130px;
+
+  @media screen and (min-width: $tablet) {
+    background-size: 582px, 514px;
+    background-position: top -100px right -187px, top 705px left -300px;
+  }
+  @media screen and (min-width: $desktop) {
+    background-size: 721px, 985px;
+    background-position: top -50px right 83px, top 820px left 0;
+  }
 }

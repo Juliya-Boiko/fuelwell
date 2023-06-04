@@ -1,7 +1,6 @@
 .header {
   padding: 8px 0 16px 0;
   border-bottom: 1px solid $grayScale-3;
-  background-color: $grayScale-4;
 
   & &__container {
     display: flex;
@@ -26,6 +25,7 @@
   z-index: 99;
   transition: $transition;
   animation: stickyScroll 0.5s forwards;
+  background-color: $grayScale-4;
 }
 
 @keyframes stickyScroll {
